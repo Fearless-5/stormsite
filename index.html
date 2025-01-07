@@ -1,41 +1,29 @@
 <html>
   <head>
-    <title>StormSite</title>
+    <title>StormSite - login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css"/>
-    <link rel="stylesheet" href="./assets/css/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="/assets/css/bootstrap-icons.css"/>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
   </head>
   <body>
     <img class="hero"/>
-    <div class="app">
-      <div class="dropdown">
-        <div class="dropdown-close">
-          <i class="bi bi-x"></i>
+    <div class="container">
+      <div class="app">
+        <img class="dehero"/>
+        <div class="page-name">Login</div>
+        <div class="inputContainer">
+          <input class="input email" type="email" placeholder="Email"/>
+          <input class="input password" type="password" placeholder="Password"/>
+          <button class="input btn">Log in <i class="bi bi-arrow-right-circle"></i></button>
+          <div class="quest" align="center">
+            New to StormSite?
+            <b class="cos">Sign up</b><br>
+            <b class="fp">Forgot password?</b>
+          </div>
         </div>
-        <div class="dropdown-list">
-          <div class="dd-lts about">About <i class="bi bi-info-circle"></i></div>
-          <div class="dd-lts login">Log in <i class="bi bi-arrow-right-circle"></i></div>
-          <div class="dd-lts signup">Sign up <i class="bi bi-arrow-right-circle"></i></div>
-        </div>
-      </div>
-      <div class="header">
-        <div class="app-logo">
-          <img class="icon" src="./assets/img/logo.jpg"/>
-        </div>
-        <div class="wlc">
-          <input value="Welcome to Stormsite" class="type" readonly/>
-        </div>
-        <div class="dropdown-open">
-          <i class="bi bi-list"></i>
-        </div>
-      </div>
-      <div class="notImp">
-        <button class="btn">Get Started <i class="bi bi-arrow-right-circle"></i></button>
-        <p>Powered by $torm</p>
       </div>
     </div>
   </body>
-  <script src="./assets/js/route.js"></script>
-  <script src="./assets/js/animation.js"></script>
-  <script src="./app.js"></script>
+  <script src="app.js"></script>
 </html>
